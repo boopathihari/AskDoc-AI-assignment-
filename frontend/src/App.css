@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a8b, #ff6a88, #d36f6f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.uploadForm {
+  background-color: #ffffff;
+  color: #333;
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.uploadForm:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.inputContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+#fileUpload {
+  display: none;
+}
+
+.customButton {
+  background: linear-gradient(135deg, #32CD32, #008000);
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customButton:hover {
+  background: linear-gradient(135deg, #006400, #228B22);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.fileName {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+#fileQuestion {
+  width: 80%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease-in-out;
+}
+
+#fileQuestion:focus {
+  border-color: #32CD32;
+  outline: none;
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #32CD32, #008000);
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #006400, #228B22);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.submitButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.chatContainer {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatMessage {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.userMessage {
+  background-color: #a1c4fd;
+  align-self: flex-start;
+}
+
+.botMessage {
+  background-color: #d3e5ff;
+  align-self: flex-end;
+}
+
+
